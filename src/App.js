@@ -1,8 +1,13 @@
-function App(){
+import { useState } from 'react'
 
-  return(
+function App() {
+
+  const [count, setCount] = useState(0)
+
+  return (
     <div>
-      <button> Add Animals </button>
+      <button onClick={()=> setCount (count + 1)}> Add Animals </button>
+      <div>Number of animals: {count}</div>
     </div>
   )
 }
