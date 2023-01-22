@@ -23,7 +23,7 @@ function App() {
   return (
     <div className='app'>
       <button onClick={() => setAnimals([...animals, getRandomAnimal()])}> Add Animals </button>
-      <div>{renderedAnimals}</div>
+      <div className='animal-list'>{renderedAnimals}</div>
     </div>
   )
 }

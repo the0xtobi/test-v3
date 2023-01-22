@@ -22,9 +22,9 @@ function AnimalShow({ type }) {
     const [clicks, setClicks] = useState(0)
 
     return (
-        <div onClick={() => setClicks(clicks + 1)}>
-            <img alt='animal' src={svgMap[type]} />
-            <img alt='heart' src={heart} style={{ width: 10 + 10 * clicks + 'px' }} />
+        <div className='animal-show' onClick={() => setClicks(clicks + 1)}>
+            <img className='animal' alt='animal' src={svgMap[type]} />
+            <img className='heart' alt='heart' src={heart} style={{ width: 10 + 10 * clicks + 'px' }} />
         </div>
     )
 }
